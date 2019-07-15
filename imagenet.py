@@ -52,7 +52,7 @@ model_names = default_model_names + customized_models_names
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
 
 # Datasets
-parser.add_argument('-d', '--data', default='path to dataset', type=str)
+parser.add_argument('-d', '--data', default='/home/xm0036/Datasets/ImageNet/', type=str)
 parser.add_argument('-j', '--workers', default=32, type=int, metavar='N',
                     help='number of data loading workers (default: 4)')
 # Optimization options
@@ -101,7 +101,7 @@ parser.add_argument('-e', '--evaluate', dest='evaluate', action='store_true',
 parser.add_argument('--pretrained', dest='pretrained', action='store_true',
                     help='use pre-trained model')
 #Device options
-parser.add_argument('--gpu-id', default='0', type=str,
+parser.add_argument('--gpu-id', default='0,1,2,3', type=str,
                     help='id(s) for CUDA_VISIBLE_DEVICES')
 
 args = parser.parse_args()

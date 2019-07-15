@@ -248,4 +248,4 @@ def demo():
     y = net(torch.randn(10, 3, 224,224))
     print(y.size())
 
-demo()
+# demo()
