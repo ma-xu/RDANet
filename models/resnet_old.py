@@ -1,5 +1,12 @@
-from common_head import *
-
+import torch.nn as nn
+import torch.utils.model_zoo as model_zoo
+from torch.nn.parameter import Parameter
+import torch
+import torch.nn.functional as F
+from torch.nn import init
+from torch.autograd import Variable
+from collections import OrderedDict
+import math
 __all__ = ['old_resnet18', 'old_resnet34', 'old_resnet50', 'old_resnet101',
            'old_resnet152']
 
