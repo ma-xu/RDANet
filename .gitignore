@@ -1,2 +1,6 @@
 
 .idea/
+__pycache__/
+__pycache__/flops_counter.cpython-36.pyc
+idea/
+.idea/workspace.xml
